@@ -4,6 +4,7 @@
 
     <!-- todo: implement the auto backup https://developer.android.com/guide/topics/data/autobackup -->
     <application
+        android:name=".MemoryLeakApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,10 +15,12 @@
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".samples.HandlerInActivity" />
+        <activity android:name=".samples.SubscribedViewActivity" />
     </application>
 
 </manifest>
